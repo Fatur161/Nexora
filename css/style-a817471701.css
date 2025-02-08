@@ -639,9 +639,5 @@ header nav a.active {
 .header__inner {
   background-color: #fff;
 }
-@supports (-webkit-appearance: none) {
-  .hero-section {
-    background-image: url(../../images/hero-section/IMAGE.webp);
-  }
-}
+
 /*# sourceMappingURL=../sourcemaps/style.min.css.map */
