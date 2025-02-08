@@ -485,10 +485,19 @@ header nav a.active {
 }
 .hero-section {
   height: calc(100vh - 65px);
-  background-image: url(../../images/hero-section/IMAGE.jpg);
+  background-image: url(../images/hero-section/IMAGE.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.hero-section {
+  background-image: url(../images/hero-section/IMAGE.jpg); /* Обычное изображение */
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: url(../images/hero-section/IMAGE@2x.jpg); /* Изображение для Retina */
+  }
 }
 .hero-section h2 {
   font-size: clamp(2.625rem, 2.3583rem + 1.3333vw, 3.375rem);
